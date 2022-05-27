@@ -184,8 +184,17 @@ label #cancel {
     .search-bar input {
         width: 250px;
     }
+    .sidebar header {
+        background-color: #e6e3e350;
+    }
+    .sidebar header i {
+        color: #11101d;
+    }
     .search-bar {
         padding-left: 200px;
+    }
+    .sidebar ul a {
+        padding-left: 10px;
     }
 }
 
@@ -236,9 +245,6 @@ label #cancel {
         padding-bottom: 10px;
         padding-right: 100px;
     }
-    #check {
-        display: none;
-    }
     .navbar-toggler #btn {
         position: absolute;
         left: 70px;
@@ -265,9 +271,34 @@ label #cancel {
     }
 }
 
+@media (max-width: 379px) {
+    .search-bar input {
+        width: 70px;
+    }
+    .search-bar input::placeholder {
+        font-size: .56rem;
+    }
+}
+
+@media (max-width:350px) {
+    .search-bar input {
+        width: 50px;
+        padding: 5px 6px;
+    }
+    .search-bar input::placeholder {
+        font-size: .46rem;
+    }
+}
+
 @media (max-width: 340px) {
     .search-bar {
         display: none;
         ;
+    }
+}
+
+@media (max-width: 250px) {
+    .header-icons {
+        display: none;
     }
 }
